@@ -26,7 +26,7 @@ Here are the key features that make Wazuh stand out as a formidable cybersecurit
 ---
 
 ### SETTING UP WAZUH:
-Setting up Wazuh is a straightforward process. I suggest Linode, a reliable cloud provider with data centers in various locations, making it an ideal choice for hosting Wazuh.
+Setting up Wazuh is a straightforward process. I suggest Linode, a reliable cloud provider with data centers in various locations, making it an ideal choice for hosting Wazuh. 
 
 - **Install Wazuh:** You can install Wazuh on a Linode server from a template by creating a Linode instance and following the official Wazuh installation instructions for your chosen Linux distribution.
 ![Install Wazuh](images/Screenshot-2023-10-28-175551.png)
