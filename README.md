@@ -1,10 +1,11 @@
-# DIY SIEM Environment
+# SOC Lab: Wazuh SIEM Detection and Incident Response
+
 
 ![Wazuh SIEM Environment](images/wazuh-2.png)
 
 ---
 
-## Meet Wazuh
+## About Wazuh
 Wazuh is a robust and open-source security information and event management (SIEM) platform that provides real-time security monitoring, threat detection, and response capabilities. It helps organizations protect their digital assets by analyzing security events, logs, and anomalies, all in a centralized and user-friendly interface. With Wazuh, you can fortify your security posture and swiftly respond to potential threats, making it an invaluable tool in today's ever-evolving cybersecurity landscape.
 
 ---
