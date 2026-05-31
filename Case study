@@ -1,0 +1,173 @@
+# Case Study: Wazuh SIEM Lab for Endpoint Monitoring and SOC Triage
+
+## Executive Summary
+
+This project demonstrates a Wazuh-based SIEM lab designed to practice endpoint monitoring, alert review, file integrity monitoring, vulnerability visibility, and basic SOC investigation workflow.
+
+The goal of this project was not only to install Wazuh, but to understand how a SOC analyst can use a SIEM to collect endpoint telemetry, review alerts, investigate suspicious activity, document findings, and recommend remediation steps.
+
+## Project Objective
+
+The main objectives of this lab were to:
+
+* Deploy a working Wazuh SIEM environment.
+* Connect monitored endpoints using Wazuh agents.
+* Validate endpoint visibility from the Wazuh dashboard.
+* Review security alerts generated from endpoint activity.
+* Practice basic SOC triage and incident documentation.
+* Understand how SIEM data supports detection, response, and remediation.
+
+## Lab Environment
+
+| Component              | Purpose                                                       |
+| ---------------------- | ------------------------------------------------------------- |
+| Wazuh Manager          | Collects, processes, and analyzes endpoint security events    |
+| Wazuh Dashboard        | Provides a web interface for alert review and investigation   |
+| Wazuh Agent            | Collects logs and security telemetry from monitored endpoints |
+| Linux Endpoint         | Used for endpoint monitoring and security event generation    |
+| Windows Endpoint       | Optional endpoint for future Windows event log monitoring     |
+| Virtual Lab / Cloud VM | Lab infrastructure used to deploy and test the environment    |
+
+## Tools and Technologies
+
+* Wazuh SIEM
+* Wazuh Agent
+* Linux
+* Windows
+* Docker / VM environment
+* File Integrity Monitoring
+* Vulnerability Detection
+* MITRE ATT&CK mapping
+* Security alert triage
+* Incident reporting
+
+## Scenario
+
+A small organization needs visibility into endpoint activity and security events. A SOC analyst deploys Wazuh to monitor endpoint logs, review alerts, identify suspicious activity, and document recommended remediation steps.
+
+This lab simulates that workflow by setting up Wazuh, onboarding endpoints, validating alert visibility, and documenting how an analyst would investigate and respond to security events.
+
+## Implementation Summary
+
+| Phase   | Activity                                            |
+| ------- | --------------------------------------------------- |
+| Phase 1 | Deployed Wazuh manager and dashboard                |
+| Phase 2 | Installed and configured Wazuh agent                |
+| Phase 3 | Verified agent connectivity                         |
+| Phase 4 | Reviewed security alerts in the dashboard           |
+| Phase 5 | Investigated endpoint events                        |
+| Phase 6 | Documented findings and remediation recommendations |
+
+## Architecture
+
+```text
++----------------------+
+| Monitored Endpoint   |
+| Wazuh Agent          |
++----------+-----------+
+           |
+           | Security events / logs
+           v
++----------------------+
+| Wazuh Manager        |
+| Alert processing     |
+| Rule matching        |
++----------+-----------+
+           |
+           v
++----------------------+
+| Wazuh Dashboard      |
+| Alert review         |
+| SOC triage           |
+| Investigation notes  |
++----------------------+
+```
+
+## SOC Workflow Practiced
+
+The lab followed a basic SOC triage process:
+
+1. Confirm endpoint agent status.
+2. Review generated alerts.
+3. Identify affected endpoint and event source.
+4. Review event details, timestamps, and severity.
+5. Determine whether the alert is expected, suspicious, or actionable.
+6. Document findings and recommended remediation.
+7. Identify future improvements for detection and response.
+
+## Investigation Areas
+
+| Area                      | What Was Reviewed                                           |
+| ------------------------- | ----------------------------------------------------------- |
+| Endpoint visibility       | Confirmed monitored endpoint communication with Wazuh       |
+| Alert review              | Reviewed generated Wazuh alerts from endpoint activity      |
+| File integrity monitoring | Reviewed file change monitoring capability                  |
+| Vulnerability visibility  | Reviewed vulnerability detection capability                 |
+| MITRE ATT&CK mapping      | Reviewed how alerts can be mapped to tactics and techniques |
+| Incident documentation    | Practiced writing a basic SOC investigation report          |
+
+## Findings
+
+| Finding                                                   | Evidence / Observation                                               | Risk   | Recommendation                                              |
+| --------------------------------------------------------- | -------------------------------------------------------------------- | ------ | ----------------------------------------------------------- |
+| Endpoint monitoring was successfully configured           | Agent visibility confirmed in Wazuh dashboard                        | Low    | Continue monitoring agent health                            |
+| Wazuh provides centralized alert visibility               | Security events can be reviewed from dashboard                       | Medium | Use dashboards for routine alert triage                     |
+| File integrity monitoring can detect unauthorized changes | FIM capability can monitor file creation, modification, and deletion | Medium | Monitor sensitive directories and document approved changes |
+| Vulnerability detection helps prioritize patching         | Wazuh can identify vulnerable software on monitored endpoints        | Medium | Track detected vulnerabilities and apply patches            |
+| MITRE ATT&CK mapping improves investigation context       | Wazuh alerts can be mapped to tactics and techniques                 | Medium | Use mapping to improve analyst understanding and reporting  |
+
+## Remediation Recommendations
+
+* Ensure endpoint agents remain active and reporting.
+* Monitor authentication-related events.
+* Enable file integrity monitoring on sensitive paths.
+* Review vulnerability findings and prioritize patching.
+* Tune noisy alerts to reduce false positives.
+* Document incident triage steps consistently.
+* Add screenshots and evidence for each investigation scenario.
+* Create a repeatable incident response checklist.
+
+## Skills Demonstrated
+
+This project demonstrates practical exposure to:
+
+* SIEM deployment
+* Endpoint monitoring
+* Wazuh agent configuration
+* Alert review
+* Security event triage
+* File integrity monitoring
+* Vulnerability detection
+* MITRE ATT&CK awareness
+* Incident documentation
+* Security remediation planning
+
+## Lessons Learned
+
+This lab helped me understand that deploying a SIEM is only the first step. The real value comes from reviewing alerts, understanding event context, identifying risk, reducing false positives, and documenting response actions clearly.
+
+It also reinforced the importance of endpoint visibility, structured investigation, and practical reporting in SOC operations.
+
+## Future Improvements
+
+Planned improvements for this project:
+
+* Add a real failed-login detection scenario.
+* Add a file integrity monitoring test case.
+* Add screenshots of alerts and dashboard views.
+* Add MITRE ATT&CK mapping for selected alerts.
+* Add a completed incident report with timestamps and evidence.
+* Add alert tuning notes.
+* Add Windows endpoint monitoring.
+* Add active response testing in a controlled lab environment.
+
+## Role Relevance
+
+This project is relevant to roles such as:
+
+* SOC Analyst Level 1
+* Security Support Analyst
+* Cybersecurity Analyst
+* Endpoint Security Analyst
+* Vulnerability Management Analyst
+* IT Support Analyst with security responsibilities
