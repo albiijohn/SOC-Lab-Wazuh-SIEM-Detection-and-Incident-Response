@@ -1,4 +1,5 @@
 # SOC Lab: Wazuh SIEM Detection and Incident Response
+I built a SOC lab, documented the workflow, and practiced analyst-style investigation.
 
 
 ![Wazuh SIEM Environment](images/wazuh-2.png)
